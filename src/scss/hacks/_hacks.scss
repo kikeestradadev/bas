@@ -2,3 +2,35 @@ video{
 	margin: 0;
 	padding: 0;
 }
+.slider-container{
+	padding: 0 15px;
+	&__title{
+		color: var(--Primary-Dark-Blue, var(--Primary-Dark-Blue, #192666));
+		/* OLD/Content/Headline 1 */
+		font-family: Montserrat;
+		font-size: 24.8px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 140%; /* 58.52px */
+		letter-spacing: -0.418px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 0;
+		text-transform: capitalize;
+		@include from(l){
+			font-size: 41.8px;
+			padding: 40px 0;
+		}
+	}
+	&__title-icon{		
+		margin-right: 5px;
+		width: 30px;
+		height: 30px;
+		@include from(l){
+			margin-right: 10px;
+			width: 61px;
+			height: 66px;
+		}
+	}
+}
