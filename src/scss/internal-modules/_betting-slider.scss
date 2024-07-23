@@ -104,6 +104,9 @@
 			transition: 1s;
 			top: var(--swiper-navigation-top-offset, 80%);
 		}
+		&:hover{
+			border: 2px solid blue;
+		}
 	}
 	&__prev::after {
 		font-size: 20px;

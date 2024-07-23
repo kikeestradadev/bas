@@ -64,6 +64,9 @@
 			transition				: 1s;
 			top						:var(--swiper-navigation-top-offset,50%)
 		}
+		&:hover{
+			border: 2px solid blue;
+		}
 	}
 
 	&__prev::after{

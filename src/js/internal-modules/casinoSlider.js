@@ -25,13 +25,17 @@ const casinoSlider = () => {
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
-			960: {
+			768: {
 				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+			960: {
+				slidesPerView: 4,
 				spaceBetween: 10,
 			},
 			// when window width is >= 1280px
 			1280: {
-				slidesPerView: 4,
+				slidesPerView: 5,
 				spaceBetween: 15,
 			},
 			1440: {

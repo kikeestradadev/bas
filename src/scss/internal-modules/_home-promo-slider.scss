@@ -108,15 +108,18 @@
 		@include from(l){
 			display: flex;
 			--swiper-navigation-size: 30px;
-			--swiper-theme-color	: #1F2024;
+			--swiper-theme-color	: #F4F4F4;
 			border					: 1px solid white;
 			width					: 46px;
 			height					: 46px;
 			border-radius			: 50%;
-			background				: #f3f3f3;
+			background				: #F4F4F4;
 			opacity					: 1;
 			transition				: 1s;
 			top						:var(--swiper-navigation-top-offset,80%)
+		}
+		&:hover{
+			border: 2px solid blue;
 		}
 	}
 
