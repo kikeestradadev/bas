@@ -1,12 +1,15 @@
 extends ../config/template 
 append config
-	-currentPage		= "home"
-	-siteName			= 'site'
+	-currentPage		= "betanysports"
+	-siteName			= 'Homebetanysports'
 	-content			= 'content' 
 	-pageDescription	= 'Pagina inicial de MyBoilerplate'
 block main-header
 block main-container
-	include ../core-modules/core-module
-	include ../internal-modules/internal-module
+	include ../internal-modules/bas-slider
+	include ../internal-modules/home-promo-slider
+	include ../internal-modules/betting-slider
+	include ../internal-modules/choose-slider
+	include ../internal-modules/casino-slider
 block main-footer
 block scripts

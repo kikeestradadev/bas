@@ -1,0 +1,86 @@
+/*here start small-size slider module styles*/
+
+.bas-slider{	
+	background-color					: #0e1b71;
+	box-sizing							: border-box;
+	&__wrapper {
+		box-sizing							: border-box;		
+	}
+	&__content{
+		position: relative;	
+		height: auto;
+		
+	}
+	&__content > video{
+		margin: 0;
+		padding: 0;
+	}
+	&__video-dk{
+		display: none;
+		@include from(lg){
+			display: block;
+		}
+		@include from(xxxl){
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__video-mb{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@include from(lg){
+			display: none;
+		}
+	}
+
+	&__prev, &__next{
+		--swiper-navigation-size	: 24px;
+        background-color			: transparent;
+		color						: white;
+		font-weight					: bold;	
+		visibility					: visible;
+		height						: 70px;
+		width						: 70px;
+		top							: var(--swiper-navigation-top-offset, 50%);	
+		
+	}
+	&__prev{
+        left							: 0;
+		top								: 45%;
+		height							: 20%;
+	}
+	&__next{
+		right							: 0;
+		top								: 45%;
+		height							: 20%;
+	}
+	&__pagination{
+		bottom							: 15px !important;
+		height							: 18px;
+		@include from(lg){
+			display						: none;
+		}		
+	}
+	&__pagination > span.swiper-pagination-bullet{
+		width							: 13px;
+		height							: 13px;
+		background						: #7a86b3;
+		opacity							: 1;
+	}
+	&__pagination > span.swiper-pagination-bullet-active{
+		background-color				: white;
+	}	
+	.swiper-button-disabled{ 
+		opacity							: .3; 
+		pointer-events					: initial;
+	}
+	&:hover{
+		@include from(lg){
+			.swiper-button-prev, .swiper-button-next{
+				visibility				: visible;			
+			}
+		} 
+	}
+}
+/*here finish small-size slider module styles*/

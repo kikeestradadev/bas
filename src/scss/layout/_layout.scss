@@ -3,7 +3,9 @@
 *::after {
 	box-sizing							: border-box;
 }
-
+body{
+	margin-top: 71px;
+}
 ::selection {
 	color: white;
 	background: #9e852e;
