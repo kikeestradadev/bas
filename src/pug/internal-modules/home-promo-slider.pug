@@ -1,12 +1,11 @@
 section(class='slider-container')
-	h2(class='slider-container__title')
-		img(src="images/home/cards.svg", class='slider-container__title-icon' alt="icon title bullet")
-		| NFL
+	div(class='slider-container__cta-container')
+		a(href="#", class='slider-container__cta') ALL PROMOS AND OFFERS
 	div(class='swiper home-promo-slider')
 		div(class='swiper-wrapper home-promo-slider__swiper-wrapper')
-			-for(let i = 1; i<=6; i++ )
+			-for(let i = 1; i<=10; i++ )
 				a(href="https://www.google.com/" class='swiper-slide home-promo-slider__item')
-					img(src="images/home/promos/promo_1.webp", class='home-promo-slider__image', alt="promo_1")
+					img(src="https://img.betanysports.eu/landing/images/home/promos/promo_1.webp", class='home-promo-slider__image', alt="promo_1")
 					div(class='home-promo-slider__text-container')
 						h3(class='home-promo-slider__text-container-title') LESS JUICE
 						span(class='home-promo-slider__text-container-sub-title') BONUS

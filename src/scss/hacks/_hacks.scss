@@ -4,6 +4,47 @@ video{
 }
 .slider-container{
 	padding: 0 15px;
+	&__cta-container{
+		padding: 20px 0;
+		width: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+	&__cta{
+		color: var(--Website-Secondary-White, #FFF);
+		text-align: center;
+		/* OLD/Content/Headline 2 */
+		font-family: Montserrat;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 125%; /* 43.55px */
+		letter-spacing: -0.348px;
+		display: flex;
+		padding: 10px 20px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		text-transform: uppercase;
+		border-radius: 8px;
+		background: var(--Gradient-Green, linear-gradient(180deg, #1BB96B 0%, #007102 100%));
+		@include from(sm){
+			max-width: 600px;
+			padding: 10px 20px;
+		}
+		@include from(m){
+			max-width: 600px;
+			padding: 20px 40px;
+			display: block;
+			margin: 0 auto;
+		}
+		@include from(l){
+			font-size: 34.84px;
+			margin-left: 0; /* Asegúrate de que margin-left esté en 0 para alinearlo a la izquierda */
+			margin-right: auto; 
+			
+		}
+	}
 	&__title{
 		color: var(--Primary-Dark-Blue, var(--Primary-Dark-Blue, #192666));
 		/* OLD/Content/Headline 1 */

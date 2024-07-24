@@ -92,33 +92,48 @@
 	&__prev, &__next {
 		display: none;
 		@include from(l) {
-			display: flex;
-			--swiper-navigation-size: 30px;
-			--swiper-theme-color: #1F2024;
-			border: 1px solid white;
-			width: 46px;
-			height: 46px;
-			border-radius: 50%;
-			background: #f3f3f3;
-			opacity: 1;
-			transition: 1s;
-			top: var(--swiper-navigation-top-offset, 85%);
-		}
-		&:hover{
-			border: 2px solid blue;
+		display: flex;
+		width: 46px;
+		height: 46px;
+		border-radius: 50%;
+		// background: #f4f4f4;
+		opacity: 1;
+		transition: 1s;
+		top: var(--swiper-navigation-top-offset, 85%);
 		}
 	}
-	&__prev::after {
-		font-size: 20px;
-		color: #515151;
-		font-weight: bold;
+
+	&__prev {
+		background-image: url('https://img.betanysports.eu/landing/left-default.svg');
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include from(lg) {
+			background-size: 120%;
+		}
+		&:hover {
+			background-image: url('https://img.betanysports.eu/landing/left-hover.svg');
+		}
 	}
+	&__next {
+		background-image: url('https://img.betanysports.eu/landing/right-default.svg');
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include from(lg) {
+			background-size: 120%;
+		}
+		&:hover {
+			background-image: url('https://img.betanysports.eu/landing/right-hover.svg');
+		}
+	}
+
+	&__prev::after,
 	&__next::after {
-		font-size: 20px;
-		color: #515151;
-		font-weight: bold;
+		content: '';
 	}
-	.swiper-button-disabled { 
+
+	.swiper-button-disabled {
 		opacity: 1 !important;
 		pointer-events: auto !important;
 	}
