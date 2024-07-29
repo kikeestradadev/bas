@@ -7,7 +7,7 @@ const casinoSlider = () => {
 			direction: 'horizontal',
 			loop: true, // Enable infinite loop
 			allowThresholdMove: true,
-			slidesPerView: 1, // Default to 1 slide per view
+			slidesPerView: 2, // Default to 1 slide per view
 			spaceBetween: 7,
 			autoplay: {
 			delay: 3000, // Change slide every 3 seconds

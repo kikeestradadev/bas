@@ -1,0 +1,61 @@
+&__container{
+	border: 1px solid white;
+	color: white;
+	.ed-item{
+		border: 1px solid white;
+	}
+}
+&__item:nth-child(1){
+	// padding: 0 !important;
+}
+&__logo{
+	margin-bottom: 15px;
+}
+&__title{
+	color: #F4F4F4;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
+&__description{
+	color: #F4F4F4;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+}
+&__menu-title{
+	color: #F4F4F4;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+}
+&__menu-text{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+&__menu-text li{
+	
+}
+
+&__menu-text a{
+	color: #F4F4F4;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
+	&:hover{
+		color: #1bb96b;
+		font-weight: 800;
+		text-decoration: none;
+	}
+}

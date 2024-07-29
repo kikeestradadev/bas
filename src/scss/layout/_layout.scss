@@ -14,3 +14,10 @@ body{
 	--boder-layout						: steelblue;		// border color to see the layout
 	--boder-layout-fixed				: red;				// border color to see the layout in fixed elements
 }
+
+.main-footer {
+	position: relative;
+	padding: 40px 0;
+	background-color: #192666;
+	@import "../core-modules/main-footer";
+}

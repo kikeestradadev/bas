@@ -1,3 +1,4 @@
+import topNav from './core-modules/topNav';
 import basSlider from './internal-modules/basSlider';
 import homePromoSlider from './internal-modules/homePromoSlider';
 import bettingSlider from './internal-modules/bettingSlider'; 
@@ -6,6 +7,7 @@ import casinoSlider from './internal-modules/casinoSlider';
 
 
 (() => {
+	topNav(); 
 	basSlider();
 	homePromoSlider();
 	bettingSlider();
