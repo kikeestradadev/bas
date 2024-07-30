@@ -6,10 +6,14 @@
 	}
 }
 &__item{
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 &__logo{
 	margin-bottom: 15px;
+	display: none;
+	@include from(m){
+		display: block;
+	}
 }
 &__title{
 	color: #F4F4F4;
@@ -26,6 +30,9 @@
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
+	@include from(xl){
+		max-width: 408px;
+	}
 }
 &__menu-title{
 	color: #F4F4F4;
@@ -34,6 +41,7 @@
 	font-style: normal;
 	font-weight: 800;
 	line-height: normal;
+	margin-bottom: 10px;
 }
 &__menu-text{
 	margin: 0;
@@ -42,7 +50,7 @@
 }
 
 &__menu-text li{
-margin-bottom: 10px;
+	margin-bottom: 0;
 }
 
 &__menu-text a{
@@ -56,7 +64,7 @@ margin-bottom: 10px;
 	// border: 1px solid white;
 	display: block;
 	width: 100%;
-	height: 30px;
+	height: 45px;
 	display: flex;
 	align-items: center;
 	transition: color 0.3s ease, font-weight 0.3s ease;
@@ -65,8 +73,21 @@ margin-bottom: 10px;
 			color: #1bb96b;
 			font-weight: 800;
 			text-decoration: none;
+			.main-footer__menu-ico {
+				display: none;
+			}
+			.main-footer__menu-ico-hover {
+				display: block;
+			}
 		}
 	}
+}
+&__menu-ico{
+	margin-right: 10px;
+}
+&__menu-ico-hover{
+	margin-right: 10px;
+	display: none;
 }
 &__menu-social{
 	margin: 0;
@@ -80,9 +101,23 @@ margin-bottom: 10px;
 }
 
 &__menu-social > li > a{
-
+	@include from(l){
+		&:hover{
+			.main-footer__menu-social-ico-hover{
+				display: block;
+				position: relative;
+				top: 3px;
+			}
+			.main-footer__menu-social-ico{
+				display: none;
+			}
+		}
+	}
 }
-
+.main-footer__menu-social-ico-hover{
+	display: none;
+}
+.main-footer__menu-social-ico{}
 &__disclaimer{
 	color: #f4f4f4;
 	font-family: Montserrat;
