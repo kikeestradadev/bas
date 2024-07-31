@@ -1,0 +1,75 @@
+section(class='video-filter')
+	div(class='video-filter__left-side-bar')
+		h2(class='video-filter__left-side-bar__title') Featured
+		div(class='swiper video-filter-slider')
+			div(class='swiper-wrapper')
+				//- -for(let i = 1; i <= 3; i++)
+				div(class='swiper-slide video-filter-slider__item')
+					img(src="https://img.betanysports.eu/landing/videos/thumbnail2.webp", class='swiper-slide video-filter-slider__img' alt="video" data-bs-target='#exampleModalToggle1' data-bs-toggle='modal')
+					span(class="video-filter-slider__item-title") 1. Full Cash App + Bitcoin Tutorial
+				div(class='swiper-slide video-filter-slider__item')
+					img(src="https://img.betanysports.eu/landing/videos/thumbnail2.webp", class='swiper-slide video-filter-slider__img' alt="video" data-bs-target='#exampleModalToggle2' data-bs-toggle='modal')
+					span(class="video-filter-slider__item-title") 2. Buying Bitcoin with Cash App
+				div(class='swiper-slide video-filter-slider__item')
+					img(src="https://img.betanysports.eu/landing/videos/thumbnail2.webp", class='swiper-slide video-filter-slider__img' alt="video" data-bs-target='#exampleModalToggle3' data-bs-toggle='modal')
+					span(class="video-filter-slider__item-title") 3. Receiving Bitcoin thru Cash App
+	div(class='video-filter__content')
+		div(class='video-filter__controls')
+			div(class='video-filter__controls-input-container')
+				img(src="https://img.betanysports.eu/landing/videos/magnifyingglass.svg", alt="")
+				input(type="text", class='video-filter__controls-input', placeholder='search')
+			
+
+
+			div(id='myBtnContainer', class='swiper video-filter-buttons-slider')
+				div(class='swiper-wrapper')
+					div(class='swiper-slide video-filter-buttons-slider__item popo')
+						button(class='video-filter__controls-button active', data-filter='all') Show all
+					div(class='swiper-slide video-filter-buttons-slider__item')
+						button(class='video-filter__controls-button', data-filter='cash') CASH APP
+					div(class='swiper-slide video-filter-buttons-slider__item')
+						button(class='video-filter__controls-button', data-filter='coinbase') COINBASE
+
+
+
+			div(class='video-filter__content-title-container')
+				h2(class='video-filter__content-title') Step-by-Step Guides
+
+				
+			div(class='video-filter__content-grid' id='myGrid')
+
+				div(class='video-filter__content-grid-item cash' data-bs-target='#exampleModalToggle1' data-bs-toggle='modal')
+					div(class='video-filter__content-grid-item-img-container')
+						img(src='https://img.betanysports.eu/landing/grid_items/thumbnail.webp', class='video-filter__content-grid-item-img' alt='')
+					div(class='video-filter__content-grid-item-title-container')
+						span(class='video-filter__content-grid-item-title') 1. Full Cash App + Bitcoin Tutorial
+
+				div(class='video-filter__content-grid-item cash' data-bs-target='#exampleModalToggle2' data-bs-toggle='modal')
+					div(class='video-filter__content-grid-item-img-container')
+						img(src='https://img.betanysports.eu/landing/grid_items/thumbnail.webp', class='video-filter__content-grid-item-img' alt='')
+					div(class='video-filter__content-grid-item-title-container')
+						span(class='video-filter__content-grid-item-title') 2. Buying Bitcoin with Cash App
+
+				div(class='video-filter__content-grid-item cash' data-bs-target='#exampleModalToggle3' data-bs-toggle='modal')
+					div(class='video-filter__content-grid-item-img-container')
+						img(src='https://img.betanysports.eu/landing/grid_items/thumbnail.webp', class='video-filter__content-grid-item-img' alt='')
+					div(class='video-filter__content-grid-item-title-container')
+						span(class='video-filter__content-grid-item-title') 3. Receiving Bitcoin thru Cash App
+
+				div(class='video-filter__content-grid-item cash' data-bs-target='#exampleModalToggle4' data-bs-toggle='modal')
+					div(class='video-filter__content-grid-item-img-container')
+						img(src='https://img.betanysports.eu/landing/grid_items/thumbnail.webp', class='video-filter__content-grid-item-img' alt='')
+					div(class='video-filter__content-grid-item-title-container')
+						span(class='video-filter__content-grid-item-title') 4. Sending Bitcoin thru Cash App
+
+				div(class='video-filter__content-grid-item cash' data-bs-target='#exampleModalToggle5' data-bs-toggle='modal')
+					div(class='video-filter__content-grid-item-img-container')
+						img(src='https://img.betanysports.eu/landing/grid_items/thumbnail.webp', class='video-filter__content-grid-item-img' alt='')
+					div(class='video-filter__content-grid-item-title-container')
+						span(class='video-filter__content-grid-item-title') 5. Set up a Cash App Account
+
+				div(class='video-filter__content-grid-item coinbase' data-bs-target='#exampleModalToggle6' data-bs-toggle='modal')
+					div(class='video-filter__content-grid-item-img-container')
+						img(src='https://img.betanysports.eu/landing/grid_items/thumbnail.webp', class='video-filter__content-grid-item-img' alt='')
+					div(class='video-filter__content-grid-item-title-container')
+						span(class='video-filter__content-grid-item-title') 6. Create a Coinbase Account
