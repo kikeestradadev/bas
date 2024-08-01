@@ -39,7 +39,7 @@ const casinoSlider = () => {
 				spaceBetween: 15,
 			},
 			1440: {
-				slidesPerView: 6,
+				slidesPerView: 8,
 				spaceBetween: 15,
 			}
 			}
