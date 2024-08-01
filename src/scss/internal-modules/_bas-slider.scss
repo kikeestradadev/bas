@@ -83,9 +83,6 @@
 	&__pagination{
 		bottom							: 15px !important;
 		height							: 18px;
-		@include from(l){
-			display						: none;
-		}		
 	}
 	&__pagination > span.swiper-pagination-bullet{
 		width							: 13px;
@@ -97,8 +94,8 @@
 		background-color				: white;
 	}	
 	.swiper-button-disabled{ 
-		opacity							: .3; 
-		pointer-events					: initial;
+		opacity							: 1; 
+		pointer-events: auto !important;
 	}
 	&:hover{
 		@include from(lg){

@@ -2,14 +2,12 @@ const basSlider = () => {
     document.addEventListener("DOMContentLoaded", function() {
         let basSliderElement = document.querySelector('.bas-slider');
         if (basSliderElement) {
-            const basSlider = new Swiper('.bas-slider', { 
-                effect: "fade",
+            const basSlider = new Swiper('.bas-slider', {
+                effect: "slide",  // Cambiar el efecto a 'slide'
                 speed: 800,
                 autoHeight: true,
-                fadeEffect: {
-                    crossFade: true
-                },
                 watchOverflow: true,
+                loop: true,  // Habilitar loop infinito
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,

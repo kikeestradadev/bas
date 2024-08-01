@@ -22,6 +22,10 @@
 	font-style: normal;
 	font-weight: 800;
 	line-height: normal;
+	text-align: center;
+	@include from(m){
+		text-align: left;
+	}
 }
 &__description{
 	color: #F4F4F4;
@@ -30,6 +34,10 @@
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
+	text-align: center;
+	@include from(m){
+		text-align: left;
+	}
 	@include from(xl){
 		max-width: 408px;
 	}
@@ -42,18 +50,25 @@
 	font-weight: 800;
 	line-height: normal;
 	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+	@include from(m){
+		text-align: left;
+	}
 }
+
+// Menu Text start here 
 &__menu-text{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-&__menu-text li{
+&__menu-text-li{
 	margin-bottom: 0;
 }
 
-&__menu-text a{
+&__menu-text-anchor{
 	color: #F4F4F4;
 	font-family: Montserrat;
 	font-size: 14px;
@@ -64,10 +79,15 @@
 	// border: 1px solid white;
 	display: block;
 	width: 100%;
-	height: 45px;
+	height: 30px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	transition: color 0.3s ease, font-weight 0.3s ease;
+	@include from(m){
+		justify-content: flex-start;
+		height: 45px;
+	}
 	@include from(l){
 		&:hover{
 			color: #1bb96b;
@@ -82,8 +102,77 @@
 		}
 	}
 }
+// Menu Text finish here
+
+// menu help start here
+&__menu-help{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	@include from(m){
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+&__menu-help-li{
+	margin-bottom: 0;
+}
+
+&__menu-help-anchor{	
+	// border: 1px solid white;
+	display: block;
+	width: 60px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: color 0.3s ease, font-weight 0.3s ease;
+	@include from(m){
+		width: 100%;
+		justify-content: flex-start;
+	}
+	@include from(l){
+		&:hover{
+			text-decoration: none;
+			.main-footer__menu-help-anchor-text{
+				color: #1bb96b;
+				font-weight: 800;
+			}
+			.main-footer__menu-ico {
+				display: none;
+			}
+			.main-footer__menu-ico-hover {
+				display: block;
+			}
+		}
+	}
+}
+&__menu-help-anchor-text{
+	display: none;
+	color: #F4F4F4;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
+	@include from(m){
+		display: block;
+	}
+}
+// menu help finish here
+
+
+
 &__menu-ico{
-	margin-right: 10px;
+	margin-right: 0;
+	@include from(m){
+		margin-right: 10px;
+	}
 }
 &__menu-ico-hover{
 	margin-right: 10px;
@@ -94,10 +183,18 @@
 	padding: 0;
 	list-style: none;
 	display: flex;
+	justify-content: center;
+	@include from(m){
+		justify-content: flex-start;
+	}
 }
 
 &__menu-social > li{
-	margin-right: 15px;
+	margin-right: 0;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 &__menu-social > li > a{
@@ -125,6 +222,10 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	text-align: center;
+	@include from(m){
+		text-align: left;
+	}
 }
 &__brand-container{ 
 	// border: 1px solid white;
