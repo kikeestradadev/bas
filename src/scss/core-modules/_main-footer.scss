@@ -1,12 +1,12 @@
 &__container{
 	// border: 1px solid white;
 	color: white;
-	.ed-item{
-		// border: 1px solid white;
-	}
 }
 &__item{
 	margin-bottom: 25px;
+}
+&__item:nth-child(8), &__item:nth-child(9), &__item:nth-child(10){
+	margin-bottom: 0;
 }
 &__logo{
 	margin-bottom: 15px;
@@ -195,6 +195,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@include from(m){
+		justify-content: flex-start;
+	}
 }
 
 &__menu-social > li > a{
@@ -237,6 +240,19 @@
 		justify-content: flex-start;
 	}
 }
-&__brand-container > img{ 
-	margin-right: 15px;
+&__brand-container{
+	display: flex;
+	flex-direction: column;
+	@include from(m){
+		flex-direction: row;
+	}
+	@include from(lg){
+		justify-content: center;
+	}
+}
+&__brand-img{
+	margin: 0 0 20px 0;
+	@include from(m){
+		margin: 0 20px 0 0;
+	}
 }

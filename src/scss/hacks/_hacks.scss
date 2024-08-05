@@ -111,3 +111,9 @@ video{
 	height: 100%;
 	min-height: 300px; /* Ajusta este valor según sea necesario */
 }
+
+.right-text{
+	@include from(xl){
+		text-align: right !important;
+	}
+}

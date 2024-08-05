@@ -1,0 +1,97 @@
+.promos-top-banner-1{
+	background-image: url('images/promos/promo_bg_banner.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin: 0;
+	position: relative;
+	height: 300px;
+	@include from(sm){
+		height: auto;
+	}
+	&__img{
+		display: none;
+		@include from(sm){
+			display: block;
+			position: relative;
+			right: -50%;
+		}
+		@include from(lg){
+			right: -30%;
+		}
+		@include from(xl){
+			right: -20%;
+		}
+		@include from(xxl){
+			right: -10%;
+		}
+		
+	}
+	
+	&__container{
+		// border: 1px solid yellow;
+		width: 100%;
+		max-width: 1600px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0 15px;
+		@include from(xl){
+			padding: 0;
+		}
+	}
+	
+	&__sub-title{
+		color:#F4F4F4;
+		text-shadow: 5px 5px 10px rgba(0, 7, 15, 0.25);
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 132%; /* 23.76px */
+		letter-spacing: 5.4px;
+		text-transform: uppercase;
+		@include from(sm){
+			font-size: 18px;
+		}
+	}
+	&__title{
+		// border: 1px solid white;
+		align-self: stretch;
+		text-shadow: 5px 5px 10px rgba(0, 7, 15, 0.25);
+		font-family: Montserrat;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 100%; /* 93px */
+		letter-spacing: -0.93px;
+		background: var(--Gradient-Gold-NEW-AA, linear-gradient(97deg, #E0AC42 5.53%, #E0AC42 5.53%, #EED688 28.91%, #FFFBCC 55.82%, #E0AC42 93.77%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@include from(sm){
+			max-width: 50%;
+		}
+		@include from(m){
+			font-size: 40px;
+		}
+		@include from(l){
+			font-size: 45px;
+		}
+		@include from(768px){
+			font-size: 50px;
+		}
+		@include from(lg){
+			font-size: 70px;
+		}
+		@include from(xl){
+			font-size: 93px;
+			max-width: 49%;
+		}
+	}
+}

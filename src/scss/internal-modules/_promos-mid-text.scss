@@ -1,0 +1,46 @@
+.promos-mid-text{
+	margin: 40px 0;
+	@include from(m){
+		margin: 160px 0;
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+	}
+	&__item:nth-child(2){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title{
+		color: var(--Color-Alias-Text-Primary, #192666);
+		/* Desktop/Heading/Heading1 */
+		font-family: Montserrat;
+		font-size: 37px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%; /* 64.8px */
+		letter-spacing: -0.54px;
+		margin-bottom: 40px;
+		@include from(m){
+			font-size: 54px;
+		}
+		@include from(lg){
+			margin-bottom: 0;
+		}
+	}
+	&__description{
+		align-self: stretch;
+		color: var(--Color-Alias-Text-Default, #515151);
+		/* Desktop/Body/Medium/Text LG */
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 180%; /* 32.4px */
+		letter-spacing: -0.18px;
+		@include from(m){
+			font-size: 18px;
+		}
+	}
+}
