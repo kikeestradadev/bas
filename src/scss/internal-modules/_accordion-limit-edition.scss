@@ -19,7 +19,6 @@
 	&__img{
 		width: 495px;
 		height: 400px;
-		margin: 10px;
 		@include fromTo(s,m){
 			width: 100%;
 			height: auto;
@@ -38,6 +37,7 @@
 	&__title-container-item:nth-child(1){
 		display: flex;
 		justify-content: center;
+		padding: 15px;
 		@include from(l){
 			flex-grow: 0;
 			flex-basis: 400px;
