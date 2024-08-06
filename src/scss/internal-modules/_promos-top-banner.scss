@@ -35,11 +35,13 @@
 	}
 	&__img-label{
 		margin-bottom:20px;
-		width: 251px;
-		height: 32px;
+		width: 230px;
+		height: 29px;
 		margin-bottom:20px;
 		@include from(m){
 			margin-bottom:40px;
+			width: 251px;
+			height: 32px;
 		}
 
 	}
@@ -76,11 +78,14 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		@include from(m){
-			font-size: 35px;
+			font-size: 25px;
 		}
 		@include from(l){
-			font-size: 77px;
+			font-size: 50px;
 			margin-left:40px;
+		}
+		@include from(xl){
+			font-size: 77px;
 		}
 	}
 	&__label-3{
@@ -143,6 +148,13 @@
 		}
 		@include from(m){
 			width: 220px;
+			height: 34px;
+			font-size: 14px;
+		}
+		@include from(l){
+			width: 220px;
+			height: 48px;
+			font-size: 16px;
 		}
 	}
 	&__item:nth-child(2){
@@ -154,8 +166,7 @@
 		}
 	}
 	&__image{
-		@include fromTo(s,sm){
-			
-		}
+		width: 100% !important;
+		max-width: none !important;
 	}
 }

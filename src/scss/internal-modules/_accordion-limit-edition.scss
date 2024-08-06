@@ -1,16 +1,27 @@
 .accordion-limit-edition{
-	background-color: white;
+	
 	border-radius: 4px;
 	padding: 10px;
+	&__wrapp{
+		background-color: white;
+		margin-bottom: 20px;
+		border-radius: 8px;
+		overflow: hidden;
+		padding: 10px;
+	}
 	&__title-container{
+		// cursor: pointer;
+		background-image: url('images/plus-blue.svg');
+		background-repeat: no-repeat;
+		background-position: top 10px right 10px;
+		&.active{
+			background-image: url('images/less-blue.svg');
+		}
 		display: flex;
 		flex-direction: column;
 		@include from(l){
 			flex-direction: row;
 		}
-	}
-	&__title-container-item{
-		
 	}
 	&__img{
 		width: 495px;
@@ -19,22 +30,42 @@
 			width: 100%;
 			height: auto;
 		}
+		@include from(l){
+			width: 100%;
+			height: 300px;
+		}
+		@include from(lg){
+			width: 495px;
+			height: 400px;
+		}
+
 	}
 	&__title-container-item:nth-child(1){
 		display: flex;
 		justify-content: center;
 		@include from(l){
 			flex-grow: 0;
+			flex-basis: 400px;
+		}
+		@include from(lg){
+			flex-grow: 0;
 			flex-basis: 495px;
 		}
 		
 	}
 	&__title-container-item:nth-child(2){
+		padding: 48px;
 		@include from(l){
-			width:calc(100% - 495px);
-			padding: 0 15px;
+			width:calc(100% - 400px);
+			padding: 48px 48px 48px 15px;
 		}
-		
+		@include from(l){
+			padding: 48px 48px 48px 15px;
+		}
+		@include from(xl){
+			width:calc(100% - 495px);
+			padding: 48px;
+		}
 	}
 	&__title{
 		align-self: stretch;
@@ -51,9 +82,9 @@
 			font-size: 37px;
 		}
 		@include from(l){
-			font-size: 25px;
+			font-size: 30px;
 		}
-		@include from(lg){
+		@include from(xl){
 			font-size: 37px;
 		}
 	}
@@ -68,10 +99,38 @@
 		line-height: 180%; /* 32.4px */
 		letter-spacing: -0.18px;
 		@include from(l){
-			font-size: 16px;
+			font-size: 14px;
 		}
-		@include from(lg){
+		@include from(xl){
 			font-size: 18px;
 		}
+	}
+	&__panel{
+		display: none;
+		position: relative;
+		padding: 15px;		
+		@include from(xl){
+			padding: 137px;
+		}
+		&.active{
+			display: block;
+		}
+	}
+	&__promo-icon{
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		@include from(xl){
+			display: block;
+		}
+	}
+	&__panel-container{
+		width: 100%;		
+		@include from(xl){
+			max-width: 900px;
+		}
+		// border: 1px solid red;
 	}
 }

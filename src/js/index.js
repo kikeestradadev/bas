@@ -8,6 +8,8 @@ import videoFilterSlider from './internal-modules/videoFilterSlider';
 import buttonFilterSlider from './internal-modules/buttonFilterSlider';
 import { initializeFilters } from './internal-modules/searchFilter';
 import modalClose from './internal-modules/modalClose';
+import accordionLimitEdition from './internal-modules/accordionLimitEdition';
+
 
 
 (() => {
@@ -22,5 +24,6 @@ import modalClose from './internal-modules/modalClose';
 	modalClose();
 	document.addEventListener('DOMContentLoaded', () => {
 		initializeFilters();
-	  });
+	});
+	accordionLimitEdition();
 })();
