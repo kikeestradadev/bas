@@ -48,7 +48,7 @@
 		}
 		
 	}
-	&__show-label{
+	&__show-label {
 		color: var(--Color-Alias-Text-CTA-Default, #0061B0);
 		text-align: center;
 		font-family: Montserrat;
@@ -61,21 +61,30 @@
 		text-transform: capitalize;
 		display: block;
 		text-align: center;
-		@include from(m){
+		position: relative;
+	
+		&::after {
+			content: "";
+			background-image: url('images/arrow-down.svg');
+			background-size: contain; /* Asegura que la imagen no se recorte */
+			background-repeat: no-repeat;
+			width: 16px; /* Ajusta el tamaño según sea necesario */
+			height: 16px; /* Ajusta el tamaño según sea necesario */
+			display: inline-block;
+			vertical-align: middle; /* Centrar verticalmente con el texto */
+			margin-left: 8px; /* Espacio entre el texto y la imagen */
+			transition: transform 0.3s ease; /* Añadir una transición para una rotación suave */
+		}
+	
+		&.active::after {
+			transform: rotate(180deg); /* Rotar la imagen 180 grados cuando el elemento tiene la clase 'active' */
+		}
+	
+		@include from(m) {
 			display: none;
 		}
 	}
-	&__side-ico{
-		
-	}
-	&__show-ico{
-		
-		margin-left: 5px;
-		width: 15px;
-		&.active {
-			transform: rotate(180deg);
-		}
-	}
+	
 	&__title-container-item:nth-child(2){		
 		padding: 15px;
 		
