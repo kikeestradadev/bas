@@ -98,10 +98,11 @@
 		}
 		@include from(l){
 			width:calc(100% - 400px);
-			padding: 48px 48px 48px 15px;
+			padding: 0 48px 0 15px;
 		}
-		@include from(l){
-			padding: 48px 48px 48px 15px;
+		@include from(lg){
+			width:calc(100% - 400px);
+			padding: 48px 48px 0 48px;
 		}
 		@include from(xl){
 			width:calc(100% - 495px);
@@ -126,9 +127,9 @@
 			padding-right: 50px;
 		}
 		@include from(l){
-			font-size: 30px;
+			font-size: 25px;
 		}
-		@include from(xl){
+		@include from(lg){
 			font-size: 37px;
 		}
 	}
