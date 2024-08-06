@@ -117,3 +117,30 @@ video{
 		text-align: right !important;
 	}
 }
+
+.bas-table{
+	width: 100%;
+}
+.bas-table tr th{
+	border-bottom:  2px solid #515151;
+	text-align: center;
+	padding: 10px 0;
+}
+.bas-table tr{
+	border-bottom:  1px solid #515151;
+}
+.bas-table tr td{
+	text-align: center;	
+	padding: 10px 0;
+}
+
+.bas-list > li{
+	color: var(--Color-Alias-Text-Default, #515151);
+	/* Desktop/Body/Medium/Text MD */
+	font-family: Montserrat;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 180%; /* 28.8px */
+	letter-spacing: -0.16px;
+}
