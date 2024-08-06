@@ -6,7 +6,6 @@
 		margin-bottom: 20px;
 		border-radius: 8px;
 		overflow: hidden;
-		padding: 10px;
 	}
 	&__title-container{
 		// cursor: pointer;
@@ -20,6 +19,7 @@
 	&__img{
 		width: 495px;
 		height: 400px;
+		margin: 10px;
 		@include fromTo(s,m){
 			width: 100%;
 			height: auto;
