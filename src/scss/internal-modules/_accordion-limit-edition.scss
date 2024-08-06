@@ -96,9 +96,10 @@
 				background-image: url('images/less-blue.svg');
 			}
 		}
+		
 		@include from(l){
 			width:calc(100% - 400px);
-			padding: 0 48px 0 15px;
+			padding: 15px 48px 0 15px;
 		}
 		@include from(lg){
 			width:calc(100% - 400px);
