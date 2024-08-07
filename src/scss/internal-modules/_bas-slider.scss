@@ -13,6 +13,7 @@
 	&__text-container{
 		@include fromTo(s,l){
 			padding-bottom: 50px;
+			padding: 0 15px;
 		}
 		// border: 1px solid red;
 		display: flex;
