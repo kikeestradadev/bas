@@ -1,25 +1,40 @@
 .accordion-rules{	
-	gap: 15px;
+	// gap: 15px;
+	padding-bottom: 52px;
+	margin: 0;
+	&__wrapp{
+		margin: 0;
+	}
+	&__wrapp:last-child{
+		border-bottom: 2px solid #ddd;
+	}
 	&__title-container{		
+		border-top: 2px solid #ddd;
 		height: 92px;
-		background-color: #192666;
+		background-color: #ffffff;
 		display: flex;
         align-items: center;
 		padding: 0 155px 0 20px;
-		background-image: url('images/plus-white.svg');
+		background-image: url('images/plus-white-blue.svg');
 		background-repeat: no-repeat;
 		background-position: top 30px right 10px;
 		&.active{
 			background-image: url('images/less-white.svg');
+			background-color: #192666;
+			border-top: none;
+			.accordion-rules__title{
+				color: #f4f4f4;
+			}
 		}
 		@include from (m){
 			background-position: top 30px right 50px;
 			padding: 0 130px 0 20px;
+			
 		}
 	}
 	&__title{
 		margin: 0;
-		color: #f4f4f4;
+		color: #192666;
 		font-family: Montserrat;
 		font-size: 20px;
 		font-style: normal;
