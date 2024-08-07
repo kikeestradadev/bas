@@ -137,7 +137,7 @@
 		}
 	}
 	&__description{
-		color: #f4f4f4;
+		color: white;
 		font-family: Montserrat;
 		font-size: 18px;
 		font-style: normal;
@@ -152,6 +152,7 @@
 		}
 	}
 	&__panel{
+		background-color: white;
 		display: none;
 		position: relative;
 		padding: 15px;		
