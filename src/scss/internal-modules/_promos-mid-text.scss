@@ -2,7 +2,8 @@
 	background-color: #F4F4F4;
 	margin: 40px 0;
 	@include from(m){
-		margin: 160px 0;
+		padding: 160px 0;
+		margin: 0;
 	}
 	&__item{
 		display: flex;
