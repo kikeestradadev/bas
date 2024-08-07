@@ -87,7 +87,9 @@
 	
 	&__title-container-item:nth-child(2){		
 		padding: 15px;
-		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		@include from(m){
 			background-image: url('images/plus-blue.svg');
 			background-repeat: no-repeat;
