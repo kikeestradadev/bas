@@ -10,6 +10,9 @@ import { initializeFilters } from './internal-modules/searchFilter';
 import modalClose from './internal-modules/modalClose';
 import accordionLimitEdition from './internal-modules/accordionLimitEdition';
 import accordionOnDemand from './internal-modules/accordionOnDemand';
+import accordionRules from './internal-modules/accordionRules';
+
+
 
 
 
@@ -28,4 +31,5 @@ import accordionOnDemand from './internal-modules/accordionOnDemand';
 	});
 	accordionLimitEdition();
 	accordionOnDemand();
+	accordionRules();
 })();

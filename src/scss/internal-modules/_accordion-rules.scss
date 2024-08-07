@@ -1,0 +1,56 @@
+.accordion-rules{	
+	gap: 15px
+	&__wrapp{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	&__title-container{		
+		height: 92px;
+		background-color: #192666;
+		display: flex;
+        align-items: center;
+		padding: 0 130px 0 20px;
+		background-image: url('images/plus-white.svg');
+		background-repeat: no-repeat;
+		background-position: top 30px right 50px;
+		&.active{
+			background-image: url('images/less-white.svg');
+		}
+	}
+	&__title{
+		color: #f4f4f4;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%; /* 26.4px */
+		letter-spacing: -0.22px;
+		@include from(l){
+			font-size: 22px;
+		}
+	}	
+	&__panel{
+		display: none;
+		position: relative;
+		padding: 30px;		
+		@include from(xl){
+			padding: 60px;
+		}
+		&.active{
+			display: block;
+		}
+	}
+	&__promo-icon{
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		@include from(xl){
+			display: block;
+		}
+	}
+	&__panel-container{
+		width: 100%;		
+	}
+}

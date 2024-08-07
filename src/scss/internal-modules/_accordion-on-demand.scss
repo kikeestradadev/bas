@@ -44,7 +44,7 @@
 		}
 	}
 	&__show-label {
-		color: var(--Color-Alias-Text-CTA-Default, #0061B0);
+		color: #f4f4f4;
 		text-align: center;
 		font-family: Montserrat;
 		font-size: 14px;
@@ -60,7 +60,7 @@
 	
 		&::after {
 			content: "";
-			background-image: url('images/arrow-down.svg');
+			background-image: url('images/arrow-down-white.svg'); 
 			background-size: contain; /* Asegura que la imagen no se recorte */
 			background-repeat: no-repeat;
 			width: 16px; /* Ajusta el tamaño según sea necesario */
@@ -174,9 +174,6 @@
 	}
 	&__panel-container{
 		width: 100%;		
-		@include from(xl){
-			max-width: 900px;
-		}
-		// border: 1px solid red;
+		
 	}
 }
