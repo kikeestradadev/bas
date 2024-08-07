@@ -1,9 +1,5 @@
 .accordion-rules{	
-	gap: 15px
-	&__wrapp{
-		max-width: 1200px;
-		margin: 0 auto;
-	}
+	gap: 15px;
 	&__title-container{		
 		height: 92px;
 		background-color: #192666;
@@ -30,6 +26,7 @@
 		}
 	}	
 	&__panel{
+		background-color: white;
 		display: none;
 		position: relative;
 		padding: 30px;		

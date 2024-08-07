@@ -16,7 +16,7 @@
 	}
 	@include fromTo(lg, xxxxl){
 		&__container{
-			border: 1px solid yellow;
+			// border: 1px solid yellow;
 			width: 100%;
 			max-width: 1600px;
 			margin: 0 auto;
@@ -33,13 +33,13 @@
 			height: 36px;
 		}
 		&__menu-container{
-			border: 1px solid #F4F4F4;
+			// border: 1px solid #F4F4F4;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;		
 		}
 		&__menu{
-			border: 1px solid #F4F4F4;
+			// border: 1px solid #F4F4F4;
 			width: 100%;
 			max-width: 900px;
 			margin: 0 auto;
@@ -52,7 +52,7 @@
 			justify-content: space-between;
 		}
 		&__menu-li{
-			border: 1px solid #F4F4F4;
+			// border: 1px solid #F4F4F4;
 			height: 70px;
 			flex: 1;
 			margin: 0;
@@ -64,7 +64,7 @@
 			justify-content: center;
 		}
 		&__menu-anchor{
-			border: 1px solid red;
+			// border: 1px solid red;
 			color: #F4F4F4;
 			font-family: Montserrat;
 			font-size: 14px;
@@ -83,7 +83,7 @@
 			position: relative;
 		}
 		&__menu-anchor-text{
-			border: 1px solid yellow;
+			// border: 1px solid yellow;
 			display: block;
 			padding-left: 35px;
 			background-image: url("images/menu-ico-white.svg");
@@ -92,7 +92,7 @@
 			background-position: left center;
 		}
 		&__btn-container{
-			border: 1px solid yellow;
+			// border: 1px solid yellow;
 			width: 100%;
 			max-width: 250px;
 			display: flex;
@@ -101,7 +101,7 @@
 			
 		}
 		&__btn{
-			border: 1px solid #F4F4F4;
+			// border: 1px solid #F4F4F4;
 			width: 100%;
 			max-width: 112px;
 			height: 28px;

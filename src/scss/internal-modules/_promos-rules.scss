@@ -1,0 +1,31 @@
+.promos-rules{
+	background-color: #F4F4F4;
+	&__container{
+		padding-top: 52px;
+		border-top: 2px solid #dddddd;
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	&__title{
+		color: #192666;
+		font-family: Montserrat;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%; /* 44.4px */
+		letter-spacing: -0.37px;
+		@include from(m){
+			font-size: 37px;
+		}
+	}
+	&__description{
+		color: #192666;
+		font-family: Montserrat;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 180%; /* 32.4px */
+		letter-spacing: -0.18px;
+	}
+}
