@@ -10,6 +10,36 @@
 		height: auto;
 		overflow: hidden;
 	}
+	&__text-container{
+		@include fromTo(s,l){
+			padding-bottom: 50px;
+		}
+		border: 1px solid red;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@include from(l){
+			position: absolute;
+			color: white;
+			z-index: 1000;
+			border: 1px solid white;
+			top: 0;
+			right: 0;
+			width: 100%;
+			max-width: 55%;
+			height: 100%;
+		}
+		@include from(lg){
+			max-width: 65%;
+		}
+		@include from(1440px){
+			max-width: 50%;
+		}
+		@include from(xl){
+			max-width: 55%;
+		}
+		
+	}
 	&__content > video{
 		margin: 0;
 		padding: 0;
@@ -48,6 +78,211 @@
 		top: var(--swiper-navigation-top-offset, 50%);
 		}
 	}
+
+	&__matchup-title{
+		color							: #FFF;
+		font-family						: "Akira Expanded";
+		font-style						: normal;
+		font-weight						: 800;
+		line-height						: 20px;
+		text-transform					: uppercase;
+		z-index							: 1000;
+		width							: 100%;
+		margin-bottom					: 15px;
+		@include from(l){
+			margin-bottom				: 5px;
+		}
+	
+	}
+	&__matchup-title-team-1, &__matchup-title-team-2{
+		text-shadow						: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		z-index							: 1000;
+		position						: relative;
+		font-size						: 35px;
+		display							: block;
+		text-align						: center;
+		line-height						: 35px;
+		@include from(l){
+			text-align: left;
+			font-size					: 30px;
+			line-height					: 30px;
+		}
+		@include from(l){
+			font-size					: 41px;
+			line-height					: 41px;
+			display						: inline-block;
+			
+		}
+		@include from(lg){
+			// display: block;
+			font-size					: 76px;
+			line-height					: 76px;
+			text-align					: left;
+			
+		}
+	}
+	&__matchup-vrs-container{	
+		z-index							: 2000;
+		position						: relative;	
+		width							: 100%;
+		height							: 20px;
+		display							: block;
+		@include from(l){
+			display						: inline-block;
+			width						: 25px;
+		}
+		@include from(lg){
+			width						: 100px;
+			height						: 60px;
+		}
+	}
+	&__matchup-vrs-logo{
+		width							: 40px; 
+		height							: auto;
+		position						: absolute;
+		top								: 50%;
+		left							: 50%;
+		transform						: translate(-50%, -50%);
+		@include from(l){
+			left							: 5%;
+		}
+		@include from(l){
+			left							: 50%;
+		}
+		@include from(lg){
+			width						: 60px;
+			top							: 50%;
+		}
+	}
+	&__matchup-date{
+		text-shadow						: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		z-index							: 1000;
+		position						: relative;
+		color							: #FFF;
+		font-family						: Montserrat;
+		font-size						: 12px;
+		font-style						: normal;
+		font-weight						: 400;
+		line-height						: normal;
+		letter-spacing					: 9.84px;
+		text-transform					: uppercase;
+		display							: block;
+		width							: 100%;	
+		text-align						: center;
+		margin-bottom					: 15px;
+		@include from(m){
+			text-align					: left;
+		}
+		@include from(l){
+			font-size					: 13px;
+			line-height					: 13px;
+			
+			margin-bottom				: 30px;
+		}	
+	}
+	&__matchup-promo{
+		font-family						: Montserrat;
+		font-style						: normal;
+		font-weight						: 800;
+		line-height						: normal;
+		letter-spacing					: 3.2px;
+		text-transform					: uppercase;
+		color							: #CB9F3E;
+		text-transform					: uppercase;
+		display							: none;
+		width							: 100%;
+		background						: linear-gradient(90deg, #C3922E 1.87%, #FFFBCC 34.07%, #C3922E 53.69%, #EED688 73.31%, #FFFBCC 97.96%);
+		background-clip					: text;
+		-webkit-background-clip			: text;
+		-webkit-text-fill-color			: transparent;
+		margin-bottom					: 5px;
+		@include from(l){
+			display						: block;
+			font-size					: 17px;
+			line-height					: 17px;
+			text-align					: left;
+			
+		}
+		@include from(lg){
+			font-size					: 32px;
+			line-height					: 32px;
+		}
+	}
+	&__matchup-label{
+		color							: #FFF;
+		font-family						: Montserrat;
+		font-size						: 24px;
+		font-style						: normal;
+		font-weight						: 400;
+		line-height						: normal;
+		letter-spacing					: 9.84px;
+		text-transform					: uppercase;
+		display							: none;
+		width							: 100%;
+		text-align						: center;
+		@include from(l){
+			display						: block;
+			font-size					: 13px;
+			line-height					: 13px;
+			text-align					: left;
+			margin-bottom				: 15px;
+		}
+		@include from(lg){
+			font-size					: 24px;
+			margin-bottom: 30px;
+		}
+	}
+	&__cta{
+		position: relative;
+		z-index: 1000;
+		width							: 100%;
+		height							: 53px;
+		display							: flex;
+		align-items						: center;
+		justify-content					: center;
+		border-radius					: 4px;
+		color							: #FFF;
+		font-family						: Montserrat;
+		font-size						: 24px;
+		font-style						: normal;
+		font-weight						: 700;
+		line-height						: normal;
+		text-transform					: uppercase;
+		text-decoration					: none;
+		background						: linear-gradient(180deg, #1AB767 0%, #02770C 100%);
+		@include fromTo(s,l){
+			margin						: 0 auto;
+		}
+		@include from(sm){		
+			height						: 53px;
+			font-size					: 30px;
+			width						: 200px;
+		}
+		@include from(m){
+			width						: 149px;
+			height						: 41px;
+			margin-right				: auto !important;
+			font-size					: 16px;
+		}
+		@include from(l){
+			width						: 274px;
+			height						: 51px;
+			font-size					: 22px;
+			margin-right				: auto !important;
+		}
+		@include from(lg){
+			width						: 274px;
+			height						: 77px;
+			font-size					: 16px;
+			margin-right				: auto;
+			font-size					: 30px;
+		}
+	}
+
+
+
+
+
 	&__prev {
 		background-image: url('https://img.betanysports.eu/landing/left-default.svg');
 		background-size: 70%;
