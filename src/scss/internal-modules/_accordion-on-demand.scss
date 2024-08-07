@@ -1,0 +1,182 @@
+.accordion-on-demand{	
+	border-radius: 4px;
+	&__wrapp{
+		
+		margin-bottom: 20px;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	&__title-container{		
+		background: var(--Gradient-GradiantSlider, radial-gradient(46.5% 73.69% at 42.48% 15.71%, #2A3CDA 1%, #131F9C 100%));
+		display: flex;
+		flex-direction: column;
+		@include from(l){
+			flex-direction: row;
+		}
+	}
+	&__img{
+		width: 495px;
+		height: 400px;
+		@include fromTo(s,m){
+			width: 100%;
+			height: auto;
+			
+		}
+		@include from(l){
+			width: 100%;
+			height: 300px;
+		}
+		@include from(lg){
+			width: 495px;
+			height: 400px;
+		}
+	}
+	&__title-container-item:nth-child(1){
+		display: flex;
+		justify-content: center;
+		@include from(l){
+			flex-grow: 0;
+			flex-basis: 400px;
+		}
+		@include from(lg){
+			flex-grow: 0;
+			flex-basis: 495px;
+		}
+	}
+	&__show-label {
+		color: var(--Color-Alias-Text-CTA-Default, #0061B0);
+		text-align: center;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 90%; /* 12.6px */
+		letter-spacing: -0.14px;
+		text-decoration-line: underline;
+		text-transform: capitalize;
+		display: block;
+		text-align: center;
+		position: relative;
+	
+		&::after {
+			content: "";
+			background-image: url('images/arrow-down.svg');
+			background-size: contain; /* Asegura que la imagen no se recorte */
+			background-repeat: no-repeat;
+			width: 16px; /* Ajusta el tamaño según sea necesario */
+			height: 16px; /* Ajusta el tamaño según sea necesario */
+			display: inline-block;
+			vertical-align: middle; /* Centrar verticalmente con el texto */
+			margin-left: 8px; /* Espacio entre el texto y la imagen */
+			transition: transform 0.3s ease; /* Añadir una transición para una rotación suave */
+		}
+	
+		&.active::after {
+			transform: rotate(180deg); /* Rotar la imagen 180 grados cuando el elemento tiene la clase 'active' */
+		}
+	
+		@include from(m) {
+			display: none;
+		}
+	}
+	
+	&__title-container-item:nth-child(2){		
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		@include from(m){
+			background-image: url('images/plus-white.svg');
+			background-repeat: no-repeat;
+			background-position: top 10px right 10px;
+			&.active{
+				background-image: url('images/less-white.svg');
+			}
+		}
+		
+		
+		@include from(l){
+			width:calc(100% - 400px);
+			padding: 15px 48px 15px 15px;
+			background-position: top 30px right 30px;
+		}
+		@include from(lg){
+			width:calc(100% - 400px);
+			padding: 48px 48px 15px 48px;
+		}
+		@include from(xl){
+			width:calc(100% - 495px);
+			padding: 48px 180px 15px 48px;
+		}
+	}
+	&__title{
+		align-self: stretch;
+		color: #f4f4f4;
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 180%; /* 32.4px */
+		letter-spacing: -0.18px;
+		@include from(l){
+			font-size: 18px;
+		}
+	}
+	&__sub-title{
+		align-self: stretch;
+		color: #f4f4f4;
+		font-family: Montserrat;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%; /* 31.2px */
+		letter-spacing: -0.26px;
+		@include from(l){
+			font-size: 26px;
+		}
+	}
+	&__description{
+		color: #f4f4f4;
+		font-family: Montserrat;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 180%; /* 32.4px */
+		letter-spacing: -0.18px;
+		@include from(l){
+			font-size: 14px;
+		}
+		@include from(lg){
+			font-size: 18px;
+		}
+	}
+	&__panel{
+		display: none;
+		position: relative;
+		padding: 15px;		
+		@include from(xl){
+			padding: 137px;
+		}
+		&.active{
+			display: block;
+		}
+	}
+	&__promo-icon{
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		@include from(xl){
+			display: block;
+		}
+	}
+	&__panel-container{
+		width: 100%;		
+		@include from(xl){
+			max-width: 900px;
+		}
+		// border: 1px solid red;
+	}
+}

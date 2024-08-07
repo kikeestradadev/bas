@@ -1,0 +1,44 @@
+.promos-on-demand{
+	// background: var(--Gradient-GradiantSlider, radial-gradient(46.5% 73.69% at 42.48% 15.71%, #2A3CDA 1%, #131F9C 100%));
+	padding: 40px 0;
+	// &__container{
+	// 	margin: 0 auto;
+	// 	width: 100%;
+	// 	max-width: 1600px;
+	// }
+	&__main-title{
+		margin-bottom: 20px;
+		@include from(m){
+			margin-bottom: 40px;
+		}
+		@include from(l){
+			padding-right: 50%;
+		}
+	}
+	&__title{
+		align-self: stretch;
+		color: var(--Color-Alias-Text-Secondary, #192666);
+		font-family: Montserrat;
+		font-size: 31px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%; /* 44.4px */
+		letter-spacing: -0.37px;
+		@include from(l){
+			font-size: 37px;
+		}
+	}
+	&__description{
+		color: var(--Color-Alias-Text-Inverted, #F4F4F4);
+		/* Desktop/Body/Medium/Text LG */
+		font-family: Montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 180%; /* 32.4px */
+		letter-spacing: -0.18px;
+		@include from(l){
+			font-size: 18px;
+		}
+	}
+}

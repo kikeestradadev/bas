@@ -9,6 +9,7 @@ import buttonFilterSlider from './internal-modules/buttonFilterSlider';
 import { initializeFilters } from './internal-modules/searchFilter';
 import modalClose from './internal-modules/modalClose';
 import accordionLimitEdition from './internal-modules/accordionLimitEdition';
+import accordionOnDemand from './internal-modules/accordionOnDemand';
 
 
 
@@ -26,4 +27,5 @@ import accordionLimitEdition from './internal-modules/accordionLimitEdition';
 		initializeFilters();
 	});
 	accordionLimitEdition();
+	accordionOnDemand();
 })();
