@@ -298,6 +298,112 @@
 	}
 
 
+	&__label-1{
+		display: none;
+		margin-bottom: 15px;
+		color: #FFF;
+		font-family: Montserrat;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		text-transform: uppercase;
+		@include from(m){
+			margin-bottom: 5px;
+			font-size: 14px;
+		}
+		@include from(l){
+			display: block;
+			text-align: left;
+			font-size: 18px;
+		}
+		@include from(lg){
+			margin-bottom: 15px;
+			font-size: 28px;
+		}
+	}
+	&__label-2{
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+		text-shadow: 0px 402.413px 113.179px rgba(0, 0, 0, 0.00), 0px 257.796px 103.298px rgba(0, 0, 0, 0.01), 0px 144.617px 87.13px rgba(0, 0, 0, 0.05), 0px 64.673px 64.673px rgba(0, 0, 0, 0.09), 0px 16.168px 35.031px rgba(0, 0, 0, 0.10);
+		font-family: Montserrat;
+		font-size: 48px;
+		line-height: 48px;
+		font-style: normal;
+		font-weight: 900;
+		background: var(--H1, linear-gradient(90deg, #C3922E 1.87%, #FFFBCC 34.07%, #C3922E 53.69%, #EED688 73.31%, #FFFBCC 97.96%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		
+		@include from(l){
+			font-size: 45px;
+			line-height: 45px;
+			margin-bottom: 5px;
+			text-align: left;
+		}
+		@include from(l){
+			font-size: 35px;
+			line-height: 35px;
+			text-align: left;
+		}
+		@include from(l){
+			font-size: 50px;
+			line-height: 50px;
+			text-align: left;
+		}
+		@include from(xl){
+			text-align: left;
+			margin-bottom: 15px;
+			font-size: 110px;
+			line-height: 110px;
+		}
+	}
+	&__label-3{
+		display: none;
+		margin-bottom: 15px;
+		color: #FFF;
+		font-family: Montserrat;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		text-align: center;
+		display: block;
+		@include from(m){
+			margin-bottom: 5px;
+		}
+		@include from(l){
+			display: block;
+			text-align: left;
+		}
+		@include from(lg){
+			margin-bottom: 15px;
+		}
+	}
+	&__label-4{
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+		color: #FFF;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		@include from(l){
+			margin-bottom: 5px;
+			text-align: left;
+		}
+		@include from(l){
+			text-align: left;
+		}
+		@include from(lg){
+			margin-bottom: 15px;
+		}
+	}
+
 
 
 
