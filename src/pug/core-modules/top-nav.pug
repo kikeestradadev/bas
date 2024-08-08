@@ -1,13 +1,28 @@
-- let pages = ['cashier', 'promotions', 'sports', 'casino', 'lottery', 'horses' , 'blog']
+- let pages = ['cashier', 'promotions', 'sports', 'lottery',]
 
 nav(class='top-nav')
 	div(class='top-nav__container')
 		a(href="#"): img(src="images/logo.svg", class='top-nav__logo', alt="logo")
 		nav(class='top-nav__menu-container')
 			ul(class='top-nav__menu')
+				li(class='top-nav__menu-li')
+					a(href="#" class='top-nav__menu-anchor'): span(class='top-nav__menu-anchor-text') test
+						span(class='top-nav__menu-anchor-text-ico')
+					ul(class='top-nav__sub-menu')
+						-for(let i=1; i <= 8; i++)
+							li(class='top-nav__sub-menu-li')
+								a(href="#", class='top-nav__sub-menu-li-anchor') lorem 
 				each page in pages
 					li(class='top-nav__menu-li')
 						a(href="#" class='top-nav__menu-anchor'): span(class='top-nav__menu-anchor-text')= page
+							span(class='top-nav__menu-anchor-text-ico')
+				li(class='top-nav__menu-li')
+					a(href="#" class='top-nav__menu-anchor'): span(class='top-nav__menu-anchor-text') test
+						span(class='top-nav__menu-anchor-text-ico')
+					ul(class='top-nav__sub-menu')
+						-for(let i=1; i <= 8; i++)
+							li(class='top-nav__sub-menu-li')
+								a(href="#", class='top-nav__sub-menu-li-anchor') lorem 
 			div(class='top-nav__btn-container')
 				a(href="#", class='top-nav__btn join') lorem
 				a(href="#", class='top-nav__btn login') lorem 
