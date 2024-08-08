@@ -50,6 +50,32 @@
 		}
 		
 	}
+	&__label{
+		display: none;
+		@include from(l){
+			display: block;
+			color: #FFF;
+			text-shadow: 0px 29.894px 8.153px rgba(0, 0, 0, 0.00), 0px 19.023px 7.609px rgba(0, 0, 0, 0.01), 0px 10.87px 6.522px rgba(0, 0, 0, 0.05), 0px 4.892px 4.892px rgba(0, 0, 0, 0.09), 0px 1.087px 2.718px rgba(0, 0, 0, 0.10);
+			font-family: Montserrat;
+			font-size: 10px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			position: absolute;
+			left: -5px;
+			bottom: 50px;
+			z-index: 1000;
+			transform: rotate(-90deg);
+		}
+		@include from(lg){
+			left: 0;
+		}
+		@include from(xl){
+			font-size: 14px;
+			bottom: 75px;
+			left: 0;
+		}
+	}
 	&__text-container{
 		padding: 0 15px;
 		position: relative;
@@ -68,7 +94,6 @@
 				right: 0;
 				top: -200px;
 			}
-			
 		}
 		// border: 1px solid red;
 		display: flex;
