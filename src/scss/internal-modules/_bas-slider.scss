@@ -16,6 +16,40 @@
 		height: auto;
 		overflow: hidden;
 	}
+	&__stcky20{
+		position: absolute;
+		z-index: 1000;
+		top: -7px;
+		z-index: 1000;
+		right: 30px;
+		width: 48px;
+		height: auto;
+		@include from(m){
+			width: 81px;
+		}	
+		@include from(xxl){
+			width: 99px;
+		}	
+	}
+	&__game-description{
+		display: none;
+		@include from(l){
+			display: block;
+			position: absolute;
+			z-index: 1000;
+			left: 0;
+			bottom: 0;
+			width: 350px;
+			height: auto;
+		}
+		@include from(lg){
+			width: 450px;
+		}
+		@include from(xl){
+			width: 550px;
+		}
+		
+	}
 	&__text-container{
 		padding: 0 15px;
 		position: relative;
