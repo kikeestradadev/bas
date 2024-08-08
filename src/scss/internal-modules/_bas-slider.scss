@@ -17,6 +17,7 @@
 		overflow: hidden;
 	}
 	&__text-container{
+		padding: 0 15px;
 		position: relative;
 		@include fromTo(s,l){
 			padding-bottom: 50px;
