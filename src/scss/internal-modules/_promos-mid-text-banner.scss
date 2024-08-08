@@ -31,7 +31,9 @@
 		line-height: 120%; /* 44.4px */
 		letter-spacing: -0.37px;
 		text-align: center;
-		@include from(m){
+		display: block;
+		width: 100%;
+		@include from(lg){
 			text-align: left;
 			font-size: 37px;
 		}
@@ -47,7 +49,7 @@
 		line-height: 180%; /* 32.4px */
 		letter-spacing: -0.18px;
 		text-align: center;
-		@include from(m){
+		@include from(lg){
 			text-align: left;
 			font-size: 18px;
 		}
@@ -69,5 +71,8 @@
 		line-height: 90%; /* 16.2px */
 		letter-spacing: -0.18px;
 		text-transform: uppercase;
+		@include fromTo(s,lg){
+			margin: 0 auto;
+		}
 	}
 }
