@@ -53,6 +53,7 @@
 	&__text-container{
 		padding: 0 15px;
 		position: relative;
+		// border: 1px solid white;
 		@include fromTo(s,l){
 			padding-bottom: 50px;
 			padding: 0 15px;
