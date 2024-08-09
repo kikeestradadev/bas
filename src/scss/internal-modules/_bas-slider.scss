@@ -125,13 +125,13 @@
 			height: 100%;
 		}
 		@include from(lg){
-			max-width: 65%;
+			max-width: 70%;
 		}
 		@include from(1440px){
 			max-width: 50%;
 		}
 		@include from(xl){
-			max-width: 55%;
+			max-width: 60%;
 		}
 		
 	}
