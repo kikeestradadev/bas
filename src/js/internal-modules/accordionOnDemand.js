@@ -39,6 +39,11 @@ const accordionOnDemand = () => {
                     titleContainerItem2.classList.toggle('active');
                     showLabel.classList.toggle('active');
                     showLabel.textContent = isActive ? 'Show More' : 'Show Less';
+
+                    // Desplazarse al título del acordeón
+                    if (!isActive) {
+                        titleContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                 });
             }
         });

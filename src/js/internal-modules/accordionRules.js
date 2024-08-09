@@ -28,6 +28,11 @@ const accordionRules = () => {
                     // Abrir/cerrar el artículo actual
                     panel.classList.toggle('active');
                     titleContainer.classList.toggle('active');
+
+                    // Desplazarse al título del acordeón
+                    if (!isActive) {
+                        titleContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
                 });
             }
         });
